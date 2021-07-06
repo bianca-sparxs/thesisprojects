@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Game of Life</title>
+        <link rel="stylesheet" href="v2.css"/>
+    </head>
+    <body>
+        <!-- <h2>
+            Conway's Game of Life <i>for Vices </i>
+        </h2>
+        <p>Experimentation Game Algorithmic Practice 1 [BUGGY]</p> -->
+
+        <div class="cover"></div>
+        <div class="container">
+            
+            <aside>
+                <img src="./imgs/gameofvice-02.png"/>
+                <h3>
+                    Conway's Game of Life <i>for Vices </i>
+                </h3>
+                <h4>Experimentation Game Algorithmic Practice 2 </h4>                
+
+            <p class="head">
+                This is an experiment to implement a simple game
+                that embraces a spiritual concept.
+            </p>
+
+            <p>
+                “The reason why the Saints were so perfectly recollected 
+                is that they always sought to abstain from wordly desires, 
+                leaving themselves free to give their whole heart to God.“<br>
+                &mdash; Imitation of Christ Book 1, Chp. 12
+            </p>
+                
+                
+            <p> This focuses on what it looks like to remove 
+                    vices <b>as quickly as possible
+                </b> (within the rules of the game)
+                <br>
+            </p>
+            <p>
+                Similar to Conway's Game of Life, you select certain tiles 
+                on cells to make them vices, then you simply observe the changes
+                between Grace and vice.
+            </p>
+            <h4>0.1 Vice</h4>
+            <p>
+                
+                <b> What is it?</b><br>
+                I've defined it as literally anything you're attatched to. 
+                Everything will be gone from you at the 
+                end of your life, so overeagerness for anything: to keep your friends,
+                your health, to do well in school, works against you.<sup>1&mdash;3</sup>
+            </p>
+            <p>
+                <b>Implementation</b><br>
+                The table is empty at first. Clicking and dragging over cells make
+                them vices. If a cell is a vice it can either:
+                <ul>
+                    <li><b>Harden</b>&mdash; being surrounded by vices make them harder to remove</li>
+                    <li><b>Go Away</b>&mdash; if they're not surrounded you can remove them youself,
+                    otherwise you'll need the help of Grace.</li>
+                    <li><b>Grow</b>&mdash;vices can spread to other empty cells</li>
+                    
+                </ul>
+            </p>
+
+            <h4>0.2 Grace</h4>
+            <p>
+                
+                <b> What is it?</b><br>
+                I've defined as literally anything you're attatched to. 
+                It is in our best effort to leave ourselves free
+                for God. Everything will gone from you at the 
+                end of your life, so overeagerness anything: to keep your friends,
+                your health, to do well in school, is working against you.<sup>1&mdash;3</sup>
+                
+            </p>
+            <p>
+                <b>Implementation</b><br>
+                The table is empty at first. Clicking and dragging over cells make
+                them vices. If a cell is a vice it can either:
+                <ul>
+                    <li><b>Harden</b>&mdash; being surrounded by vices make them harder to remove</li>
+                    <li><b>Go Away</b>&mdash; if they're not surrounded you can remove them youself,
+                    otherwise you'll need the help of Grace.</li>
+                    <li><b>Grow</b>&mdash;vices can spread to other empty cells</li>
+                    
+                </ul>
+            </p>
+            
+                <div>
+                    <h4>
+                        Reference
+                    </h4>
+                    <div class="col">
+                        
+                        <p>"All things are vanity" (Eccl 1:2)</p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            3. To reject all things is to have mastery over 
+                            them all.
+                        </p>
+                        
+                    </div>
+                </div>
+
+            <!-- <div>
+                <div class="alive cell" height="200" width="10" style="display: block;"> vice</div>
+
+                <div class="hard cell" height="200" width="10" style="color: white;"> hard vice</div>
+
+                <div class="grace cell" height="200" width="10" > grace</div>
+            </div> -->
+            </aside>
+            <main>
+                    <section class="info">
+                        <h3>Select vice cells by clicking and dragging. <br><br></h3>
+                        <input class="button" type='button' value='Change!'onclick='change()'/>
+                <input class="button" type='button' id='startstop' value='Start' onclick='startStop()'/>
+                <input class="button" type='button' id='startstop' value='Reset' onclick='reset()'/>
+                        
+                    </section>
+                
+                <div id="world"></div>
+            </main>
+            
+            
+        </div>
+
+        
+
+        
+        
+
+        <script src="gov_v2e1.js"></script>
+    </body>
+</html>

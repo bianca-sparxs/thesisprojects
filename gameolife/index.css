@@ -1,0 +1,40 @@
+body {
+    background-color: #fafafa;
+    font-family: sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+#world {
+    display: grid;
+    gap: 1px;  
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+   border: 1px solid ;
+   /* border-radius: 100%; */
+}
+
+.dead {
+    border-color: blue;
+}
+
+.alive {
+    background-color: orange;
+}
+
+.grace {
+    background-color: blueviolet;
+    height: 70%;
+    width: 70%;
+
+}
+
+.hard {
+    background-color: black;
+    border-spacing: 10px;
+    border: 1px dashed slategrey;
+}
